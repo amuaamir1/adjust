@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: ruby-webserver
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      name: ruby-webserver
+  template:
+    metadata:
+      labels:
+        name: ruby-webserver
+    spec:
+      containers:
+      - name: ruby-webserver
+        image: amuaamir/ruby-webserver:latest
+        imagePullPolicy: IfNotPresent
+        ports:
+          - containerPort: 80
+        
