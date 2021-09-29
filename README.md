@@ -5,6 +5,7 @@ Prerequisite to run the below command:
 
 
 Containerize and deploy application on kubernetes cluster.
+
 1)	Create a Dockerfile on your machine using the project script. Final Dockerfile added in github repository. { here I used ruby:alpine as base image as there was no dependency on the other OS component, so as to keep the image file size low.}
 
 2)	Create a docker image using the dockerfile.
